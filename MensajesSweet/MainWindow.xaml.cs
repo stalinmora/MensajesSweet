@@ -23,6 +23,7 @@ namespace MensajesSweet
         public MainWindow()
         {
             InitializeComponent();
+
         }
     }
 }
