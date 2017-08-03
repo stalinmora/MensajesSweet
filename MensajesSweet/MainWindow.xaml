@@ -1,12 +1,16 @@
-﻿<Window x:Class="MensajesSweet.MainWindow"
+﻿<Window x:Name="frmMain" x:Class="MensajesSweet.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MensajesSweet"
         mc:Ignorable="d"
-        Title="MainWindow" Height="416.246" Width="683.991">
-    <Grid>
-
+        Title="Mensajes Central Sweet &amp; Coffee" Height="533.746" Width="1041.896" FontSize="11" ResizeMode="NoResize">
+    <Grid Margin="10,10,2,20">
+        <DataGrid x:Name="dgMensajes" Height="162" Margin="10,42,10,0" VerticalAlignment="Top"/>
+        <DataGrid x:Name="dgCumpleanos" Margin="10,248,10,57"/>
+        <Button x:Name="btnSalir" Content="_SALIR" Margin="816,436,10,10"/>
+        <Label Content="Cumpleaños del Dia." Margin="10,222,845,210" RenderTransformOrigin="0.526,1.176"/>
+        <Label Content="Mensajes desde la Central" HorizontalAlignment="Left" Margin="10,10,0,431"/>
     </Grid>
 </Window>
