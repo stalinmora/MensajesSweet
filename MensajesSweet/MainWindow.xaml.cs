@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MensajesSweet.LogicaNegocios;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,12 @@ namespace MensajesSweet
         public MainWindow()
         {
             InitializeComponent();
+            MensajesBol mensajes = new MensajesBol();
+            dgMensajes.ItemsSource = mensajes.Todos();
+        }
+
+        private void btnLeer_Click(object sender, RoutedEventArgs e)
+        {
 
         }
     }
