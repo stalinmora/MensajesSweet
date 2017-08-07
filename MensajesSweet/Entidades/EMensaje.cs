@@ -15,5 +15,6 @@ namespace MensajesSweet.Entidades
         public DateTime Fecha { get; set; }
         public int Vigencia { get; set; }
         public string Observaciones { get; set; }
+        public int Documento { get; set; }
     }
 }

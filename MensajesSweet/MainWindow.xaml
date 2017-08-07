@@ -9,15 +9,15 @@
     <Grid Margin="10,10,2,20">
         <DataGrid x:Name="dgMensajes" Height="162" Margin="10,42,10,0" VerticalAlignment="Top" AutoGenerateColumns="False" IsReadOnly="True" CanUserResizeColumns="False" CanUserReorderColumns="False" CanUserSortColumns="False" CanUserResizeRows="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding Descripcion}" Width="50" Header="Descripcion"/>
-                <DataGridTextColumn Binding="{Binding Persona}" Width="50" Header="Persona"/>
-                <DataGridTextColumn Binding="{Binding Departamento}" Width="50" Header="Departamento"/>
-                <DataGridTextColumn Binding="{Binding Fecha}" Width="50" Header="Fecha Doc"/>
-                <DataGridTextColumn Binding="{Binding Observaciones}" Width="50" Header="Observaciones"/>
+                <DataGridTextColumn Binding="{Binding Descripcion}" Width="300" Header="Descripcion"/>
+                <DataGridTextColumn Binding="{Binding Persona}" Width="100" Header="Persona"/>
+                <DataGridTextColumn Binding="{Binding Departamento}" Width="100" Header="Departamento"/>
+                <DataGridTextColumn Binding="{Binding Fecha}" Width="70" Header="Fecha Doc"/>
+                <DataGridTextColumn Binding="{Binding Observaciones}" Width="320" Header="Observaciones"/>
                 <DataGridTemplateColumn Width="80">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <Button x:Name="btnLeer" Tag="{Binding}" Width="70" Click="btnLeer_Click">Corregir</Button>
+                            <Button x:Name="btnLeer" Tag="{Binding}" Width="70" Click="btnLeer_Click">Ver Memo</Button>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>

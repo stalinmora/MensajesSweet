@@ -24,7 +24,8 @@ namespace MensajesSweet.AccesoDatos
                                 "B.Descripcion AS DEPARTAMENTO,"+
                                 "A.Fecha AS FECHA, "+
                                 "A.Vigencia AS VIGENCIA, "+
-                                "A.Observaciones AS OBSERVACIONES "+
+                                "A.Observaciones AS OBSERVACIONES ,"+
+                                "A.DocumentID AS DOCUMENTO "+
                                 " FROM dbo.Messages A "+
                                 "INNER JOIN dbo.Departments B " +
                                 "on(A.DepartmentID = B.ID) " +
@@ -43,7 +44,8 @@ namespace MensajesSweet.AccesoDatos
                             Departamento = Convert.ToString(data["DEPARTAMENTO"]),
                             Fecha = Convert.ToDateTime(data["FECHA"]),
                             Vigencia = Convert.ToInt32(data["VIGENCIA"]),
-                            Observaciones = Convert.ToString(data["OBSERVACIONES"])
+                            Observaciones = Convert.ToString(data["OBSERVACIONES"]),
+                            Documento = Convert.ToInt32(data["DOCUMENTO"])
                         };
                         mensajes.Add(mensaje);
                     }
